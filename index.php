@@ -22,7 +22,7 @@
         </div>
       <?php endif; ?>
         <form method='GET' action='index.php'>
-            <label>Enter the word you played:
+            <label>Enter the word you played (required field):
                 <input type='text' name='word' value="<?php if(isset($scrab)) echo $scrab ?>">
             </label><br>
             <fieldset class='adjustments'>
