@@ -28,6 +28,8 @@ form {
     margin: 20px;
     width:auto;
     text-align: center;
+    font-size: 20px;
+    font-family: arial;
 }
 .adjustments {
     border: 0px;
@@ -40,10 +42,12 @@ label, legend {
 }
 img {
     display: block;
+    margin:auto;
 
 }
 input, textarea, select {
     display:block;
+    font-size: 20px;
 }
 
 input[type='checkbox'], input[type='radio'] {
@@ -55,5 +59,7 @@ input[type='checkbox'] + label {
 }
 h1 {
     font-family: arial;
+    margin:auto;
+    text-align: center;
 
 }
