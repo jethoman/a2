@@ -33,7 +33,8 @@
                       <?php if($bonus == 'double') echo 'CHECKED'?>> Double Word Score</label>
                     <label><input type='radio' name='bonus' value='triple'
                       <?php if($bonus == 'triple') echo 'CHECKED'?>> Triple Word Score</label>
-
+            </fieldset>
+            <fieldset class='adjustments'>
                 <legend>Include 50 point "bingo"? (word must be at least 7 letters)</legend>
                     <label><input type='checkbox' name='bingo' value='yes'
                       <?php if($bingo == 'yes') echo 'CHECKED'?>> Yes</label>
