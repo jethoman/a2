@@ -1,5 +1,57 @@
 fieldset{
   padding:.65em .625em .75em;
-  margin:0 2px;
-  border:0px solid silver;
+}
+body {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 50px;
+    background-color: #e6e6e6;
+}
+form {
+    font-family: arial;
+    font-size: 20px;
+}
+.alert, .btn {
+    margin:auto;
+
+}
+.alert-ok {
+    display:block;
+    background-color: #99ff99;
+    margin: 20px;
+    width:auto;
+}
+.alert-warning {
+    display:block;
+    background-color: #ff6666;
+    margin: 20px;
+    width:auto;
+}
+.adjustments {
+    border: 0px;
+}
+
+label, legend {
+    display:block;
+    margin-top:20px;
+    margin-bottom:0;
+}
+img {
+    display: block;
+
+}
+input, textarea, select {
+    display:block;
+}
+
+input[type='checkbox'], input[type='radio'] {
+    display:inline;
+}
+
+input[type='checkbox'] + label {
+    display:inline;
+}
+h1 {
+    font-family: arial;
+
 }

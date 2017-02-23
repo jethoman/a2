@@ -1,19 +1,19 @@
 <?php
 
-  class WordValue {
+    class WordValue {
 
-  private $alphabet;
-  private $scrabVal;
+    private $alphabet;
+    private $scrabVal;
 
-  public function __construct($pathToJson){
-    $alphabetJson = file_get_contents($pathToJson);
-    $this->alphabet = json_decode($alphabetJson, true);
-  }
+    public function __construct($pathToJson){
+        $alphabetJson = file_get_contents($pathToJson);
+        $this->alphabet = json_decode($alphabetJson, true);
+    }
 
-  public function calcWordValue(String $scrab, $bonus, $bingo){
+    public function calcWordValue(String $scrab, $bonus, $bingo){
 
-    $scrabs = str_split($scrab);
-    $wordSize = sizeof($scrabs);
+        $scrabs = str_split($scrab);
+        $wordSize = sizeof($scrabs);
     foreach ($scrabs as $entries => $entry) {
       #cycling through my entered word
        foreach ($this->alphabet as $letters =>$letter) {
@@ -23,25 +23,22 @@
 
                continue;
              }
-       }
+        }
 
     }
-    if($bonus == 'double')
-    {
-      $this->scrabVal = $this->scrabVal * 2;
-    } elseif($bonus == 'triple') {
-      $this->scrabVal = $this->scrabVal * 3;
-    }
-    if($bingo == 'yes' and $wordSize >= 7)
-    {
-      $this->scrabVal = $this->scrabVal + 50;
-    }
-    return $this->scrabVal;
+        if($bonus == 'double')
+        {
+            $this->scrabVal = $this->scrabVal * 2;
+        } elseif($bonus == 'triple') {
+            $this->scrabVal = $this->scrabVal * 3;
+        }
+        if($bingo == 'yes' and $wordSize >= 7)
+        {
+            $this->scrabVal = $this->scrabVal + 50;
+        }
+        return $this->scrabVal;
 
 
-  } #end of function
+    } #end of function
 
 } #end of class
-
-
- ?>
